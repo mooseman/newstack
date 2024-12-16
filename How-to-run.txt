@@ -1,0 +1,44 @@
+
+
+ **  How to run **  
+
+
+In one terminal, start the server:
+
+python3 server.py
+
+You should see:
+
+[Server] Listening on ('localhost', 55555)
+
+
+
+In another terminal, start the client:
+
+    python3 client.py
+
+Expected Output:
+
+    On the client side:
+
+[Client] Starting handshake...
+[Client] Sent handshake init.
+[Client] Received handshake response.
+[Client] Sent handshake complete.
+[Client] Sent encrypted data.
+[Client] Received from server: Server echo: Hello Secure World!
+
+
+On the server side:
+
+[Server] Listening on ('localhost', 55555)
+[Server] Received handshake init from ('127.0.0.1', some_port)
+[Server] Sent handshake response.
+[Server] Handshake completed, session established.
+[Server] Sent encrypted data.
+[Server] Received message: Hello Secure World!
+[Server] Sent encrypted data.
+
+
+
+
